@@ -1,0 +1,28 @@
+@import "./variables";
+
+/** Estilos pagina index **/
+.home {
+    background-image: url("../../img/home_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    display: flex;
+    height: 100vh;
+    .wrapper {
+        background-color: $cm-white;
+        display: flex;
+        flex-flow: column;
+        overflow-y: scroll;
+        flex-basis: 40%;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    #logo {
+        margin-top: 144px;
+        margin-bottom: 48px;
+    }
+    form {
+        margin-bottom: 164px;
+    }
+}

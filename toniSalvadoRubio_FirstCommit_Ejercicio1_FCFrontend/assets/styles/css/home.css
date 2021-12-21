@@ -1,0 +1,29 @@
+/* Variables */
+/** Estilos pagina index **/
+.home {
+  background-image: url("../../img/home_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  display: flex;
+  height: 100vh;
+}
+.home .wrapper {
+  background-color: #fff;
+  display: flex;
+  flex-flow: column;
+  overflow-y: scroll;
+  flex-basis: 40%;
+}
+.home .wrapper::-webkit-scrollbar {
+  display: none;
+}
+.home #logo {
+  margin-top: 144px;
+  margin-bottom: 48px;
+}
+.home form {
+  margin-bottom: 164px;
+}
+
+/*# sourceMappingURL=home.css.map */

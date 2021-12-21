@@ -1,0 +1,80 @@
+/* Variables */
+/** Estilos pagina index **/
+.home {
+  background-image: url("../../img/home_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  display: flex;
+  height: 100vh;
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+}
+@media only screen and (max-width: 1024px) {
+  .home {
+    background-position-x: 0%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home {
+    background: none;
+  }
+}
+.home .wrapper {
+  background-color: #fff;
+  display: flex;
+  flex-flow: column;
+  overflow-y: scroll;
+  flex-basis: 40%;
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Extra small devices (phones, 600px and down) */
+}
+.home .wrapper::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .home .wrapper {
+    flex-basis: 60%;
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home .wrapper {
+    flex-basis: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home .wrapper {
+    flex-basis: 100%;
+  }
+}
+.home #logo {
+  margin-top: 144px;
+  margin-bottom: 48px;
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Extra small devices (phones, 600px and down) */
+}
+@media only screen and (max-width: 1024px) {
+  .home #logo {
+    margin-top: 344px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home #logo {
+    margin-top: 144px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home #logo {
+    line-height: 16px;
+    margin-top: 20px;
+  }
+}
+.home form {
+  margin-bottom: 164px;
+}
+
+/*# sourceMappingURL=home.css.map */
