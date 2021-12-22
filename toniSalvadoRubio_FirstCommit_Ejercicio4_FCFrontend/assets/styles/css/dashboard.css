@@ -1,0 +1,205 @@
+/* Variables */
+/** Estilos pagina index **/
+.dashboard .admin-panel {
+  display: flex;
+  flex-flow: row;
+  gap: 40px;
+}
+.dashboard .admin-panel .admin-main {
+  flex-basis: 80%;
+}
+.dashboard .admin-panel .sidebar {
+  flex-basis: 20%;
+  height: fit-content;
+  background-color: #fff;
+  padding: 28px 24px;
+  border-radius: 20px;
+}
+.dashboard .admin-panel .sidebar .section-title {
+  margin-bottom: 28px;
+}
+.dashboard .admin-panel .sidebar i {
+  width: fit-content;
+  color: #32D4A4;
+  font-size: 16px;
+}
+.dashboard .admin-panel .sidebar .filters .tag-list span {
+  display: inline-block;
+  background-color: #E6E6EA;
+  color: #121625;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px 4px;
+  margin-right: 6px;
+  margin-bottom: 7px;
+  border-radius: 20px;
+}
+.dashboard .admin-panel .sidebar .filters .tag-list span svg {
+  width: 12px;
+  margin-left: 8px;
+  vertical-align: text-bottom;
+  color: #A5A8B3;
+}
+.dashboard .dashboard-navbar {
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-navbar form {
+  margin-left: 24px;
+}
+.dashboard .dashboard-navbar button {
+  margin-left: auto;
+}
+
+/* Form */
+.form-label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.form-control {
+  border-radius: 6px;
+  font-size: inherit;
+  line-height: 12px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  background-color: #F8F8F9;
+  border-color: #F8F8F9;
+  color: #A5A8B3;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #32D4A4;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 253, 141, 0.25);
+}
+.form-control::placeholder {
+  color: #A5A8B3;
+}
+
+.search {
+  position: relative;
+}
+.search i {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+}
+.search .form-control {
+  width: 354px;
+  margin-bottom: 0;
+  padding: 9px 15px 8px 44px;
+  border-radius: 6px;
+  font-size: inherit;
+  background-color: #E6E6EA;
+  border-color: #E6E6EA;
+  color: #8C909C;
+}
+.search .form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #32D4A4;
+  outline: 0;
+  box-shadow: none;
+}
+.search .form-control::placeholder {
+  color: #A5A8B3;
+}
+
+.form-select {
+  padding: 9px 15px 8px 15px;
+  margin-bottom: 28px !important;
+  border-radius: 6px;
+  font-size: inherit;
+  background-color: #F8F8F9;
+  border-color: #F8F8F9;
+  color: #121625;
+  font-weight: 500;
+}
+.form-select:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #32D4A4;
+  outline: 0;
+  box-shadow: none;
+}
+.form-select::placeholder {
+  color: #121625;
+  font-weight: 500;
+}
+.form-select option {
+  max-width: 100%;
+  font-weight: 500;
+}
+
+.form-check {
+  padding-left: 30px;
+}
+.form-check .form-check-input[type=checkbox] {
+  margin-top: 1px;
+  margin-right: 13px;
+  border-radius: 0.15rem;
+  border: 3px solid #A5A8B3;
+}
+.form-check .form-check-input:checked {
+  background-color: #32D4A4;
+}
+.form-check .form-check-input:checked {
+  background-color: #32D4A4;
+}
+.form-check .form-check-input:focus {
+  border-color: #32D4A4;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 253, 141, 0.25);
+}
+
+/* Tabla */
+.table {
+  margin-top: 15px;
+  border-radius: 20px;
+  background-color: white;
+  border-collapse: separate;
+  border: solid #E6E6EA 1px;
+}
+.table tbody {
+  border-top: none !important;
+}
+.table td,
+.table th {
+  border-top: none;
+}
+.table th {
+  cursor: pointer;
+  color: #A5A8B3;
+  font-size: 11px;
+  letter-spacing: 0.01rem;
+  text-transform: uppercase;
+  padding: 13px 24px;
+}
+.table th i {
+  margin-left: 12px;
+}
+.table th:hover {
+  color: #121625;
+}
+.table td {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 20px 24px;
+}
+.table .tags span {
+  background-color: #32D4A4;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px 8px 4px;
+  margin-right: 6px;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=dashboard.css.map */
