@@ -24,7 +24,7 @@ a {
 
 /* Layout */
 .wrapper {
-  padding: 102px;
+  padding: 0px 102px;
 }
 
 /* Texto */
@@ -56,12 +56,50 @@ a {
   font-weight: 600;
 }
 
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 /* Header */
 .header {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   padding: 24px 40px;
+}
+.header .profile {
+  display: flex;
+  background-color: #fff;
+  border-radius: 90px;
+  align-items: center;
+  padding-right: 16px;
+}
+.header .profile h4 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.header .profile .profile-img {
+  background-color: #121625;
+  border-radius: 100%;
+  padding: 8px 7px;
+  color: #515561;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.header .profile .dropdown-toggle {
+  color: #121625;
+  font-weight: 600;
+}
+.header .profile .dropdown-toggle::after {
+  display: none;
+}
+.header .profile .dropdown-toggle i {
+  margin-left: 15px;
+  color: #A5A8B3;
 }
 
 /* Logo */
@@ -78,52 +116,6 @@ a {
   border-left: 5px solid #32D4A4;
 }
 
-/* Forms */
-form .form-label {
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-form .form-control {
-  border-radius: 6px;
-  font-size: inherit;
-  line-height: 12px;
-  padding: 10px 15px;
-  margin-bottom: 30px;
-  background-color: #F8F8F9;
-  border-color: #F8F8F9;
-  color: #A5A8B3;
-}
-form .form-control:focus {
-  color: #212529;
-  background-color: #fff;
-  border-color: #32D4A4;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 253, 141, 0.25);
-}
-form .form-control::placeholder {
-  color: #A5A8B3;
-}
-form .form-check {
-  padding-left: 30px;
-}
-form .form-check .form-check-input[type=checkbox] {
-  margin-top: 1px;
-  margin-right: 15px;
-  border-radius: 0.15rem;
-  border: 3px solid #A5A8B3;
-}
-form .form-check .form-check-input:checked {
-  background-color: #32D4A4;
-}
-form .form-check .form-check-input:checked {
-  background-color: #32D4A4;
-}
-form .form-check .form-check-input:focus {
-  border-color: #32D4A4;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 253, 141, 0.25);
-}
-
 /* Botones */
 .btn {
   border-radius: 6px;
@@ -135,6 +127,25 @@ form .form-check .form-check-input:focus {
 .btn-primary {
   background-color: #32D4A4;
   border-color: #32D4A4;
+}
+
+.btn-outline-secondary {
+  height: 40px;
+  font-size: 15px;
+  border-radius: 8px;
+  padding: 5px 14px 5px 10px !important;
+  color: #121625;
+  background-color: #fff;
+  border: 1px solid #E6E6EA;
+}
+.btn-outline-secondary i {
+  margin-right: 12px;
+  font-size: 19px;
+}
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 
 /*# sourceMappingURL=main.css.map */

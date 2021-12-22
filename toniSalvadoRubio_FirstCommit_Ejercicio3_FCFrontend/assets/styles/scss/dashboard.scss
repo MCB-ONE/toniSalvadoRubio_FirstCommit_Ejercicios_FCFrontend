@@ -1,6 +1,85 @@
 @import "./variables";
 
 /** Estilos pagina index **/
-.home {
-    
+.dashboard {
+    .admin-panel {
+        display: flex;
+        flex-flow: row;
+        gap: 40px;
+        div:first-of-type {
+            flex-basis: 75%;
+        }
+    }
+    .dashboard-navbar {
+        display: flex;
+        align-items: center;
+        form {
+            margin-left: 24px;
+        }
+        button {
+            margin-left: auto;
+        }
+    }
+}
+
+/* Form */
+.search {
+    position: relative;
+    i {
+        position: absolute;
+        top: 14px;
+        left: 16px;
+    }
+    .form-control {
+        width: 354px;
+        margin-bottom: 0;
+        padding: 10px 15px 10px 44px;
+        border-radius: $cm-border--radius;
+        font-size: inherit;
+        background-color: $cm-gray--200;
+        border-color: $cm-gray--200;
+        color: $cm-gray--400;
+        &:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: $cm-primary;
+            outline: 0;
+            box-shadow: none;
+        }
+        &::placeholder {
+            color: $cm-gray--300;
+        }
+    }
+}
+
+/* Tabla */
+.table {
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: white;
+    border-collapse: separate;
+    border: solid $cm-gray--200 1px;
+
+    tbody {
+        border-top: none !important;
+    }
+    td,
+    th {
+        border-top: none;
+    }
+    th {
+        color: $cm-gray--300;
+        font-size: 11px;
+        letter-spacing: 0.01rem;
+        text-transform: uppercase;
+        padding: 13px 24px;
+        i {
+            margin-left: 12px;
+        }
+    }
+    td {
+        font-size: 15px;
+        font-weight: 600;
+        padding: 20px 24px;
+    }
 }

@@ -1,4 +1,83 @@
 /* Variables */
 /** Estilos pagina index **/
+.dashboard .admin-panel {
+  display: flex;
+  flex-flow: row;
+  gap: 40px;
+}
+.dashboard .admin-panel div:first-of-type {
+  flex-basis: 75%;
+}
+.dashboard .dashboard-navbar {
+  display: flex;
+  align-items: center;
+}
+.dashboard .dashboard-navbar form {
+  margin-left: 24px;
+}
+.dashboard .dashboard-navbar button {
+  margin-left: auto;
+}
+
+/* Form */
+.search {
+  position: relative;
+}
+.search i {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+}
+.search .form-control {
+  width: 354px;
+  margin-bottom: 0;
+  padding: 10px 15px 10px 44px;
+  border-radius: 6px;
+  font-size: inherit;
+  background-color: #E6E6EA;
+  border-color: #E6E6EA;
+  color: #8C909C;
+}
+.search .form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #32D4A4;
+  outline: 0;
+  box-shadow: none;
+}
+.search .form-control::placeholder {
+  color: #A5A8B3;
+}
+
+/* Tabla */
+.table {
+  margin-top: 15px;
+  border-radius: 20px;
+  background-color: white;
+  border-collapse: separate;
+  border: solid #E6E6EA 1px;
+}
+.table tbody {
+  border-top: none !important;
+}
+.table td,
+.table th {
+  border-top: none;
+}
+.table th {
+  color: #A5A8B3;
+  font-size: 11px;
+  letter-spacing: 0.01rem;
+  text-transform: uppercase;
+  padding: 13px 24px;
+}
+.table th i {
+  margin-left: 12px;
+}
+.table td {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 20px 24px;
+}
 
 /*# sourceMappingURL=dashboard.css.map */
