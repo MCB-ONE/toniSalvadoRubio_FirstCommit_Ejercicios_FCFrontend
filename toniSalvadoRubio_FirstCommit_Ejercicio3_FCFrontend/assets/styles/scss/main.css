@@ -85,12 +85,13 @@ a {
 }
 .header .profile h4 {
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 700;
 }
 .header .profile .profile-img {
   background-color: #121625;
   border-radius: 100%;
-  padding: 8px 7px;
+  padding: 11px 9px;
   color: #515561;
   display: flex;
   align-items: center;
@@ -116,10 +117,7 @@ a {
   line-height: 34px;
 }
 #logo span {
-  margin-left: 5px;
-  padding-left: 5px;
   font-weight: 800;
-  border-left: 5px solid #32D4A4;
 }
 
 /* Botones */
@@ -148,10 +146,11 @@ a {
   margin-right: 12px;
   font-size: 19px;
 }
-.btn-outline-secondary:hover {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+.btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus {
+  color: #121625;
+  background-color: #E6E6EA;
+  border-color: #E6E6EA;
+  box-shadow: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
