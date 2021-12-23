@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>OpenBootcamp | Alumnos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación web para la gestión de los alumnos de Open Bootcamp" />
+    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
+    <meta content="Shreethemes" name="Toni Salvadó" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico    ">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="assets/styles/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="assets/styles/css/candidateForm.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="return">
+            <p><i class="bi bi-arrow-left"></i>Volver</p>
+        </div>
+        <div class="profile">
+            <div class="profile-img">
+                <h4>NA</h4>
+            </div>
+            <span class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">UserName<i class="bi bi-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                </ul>
+            </span>
+        </div>
+    </header>
+    <main class="wrapper candidate-dashboard">
+        <div class="candidate-form">
+            <div class="profile">
+                <img src="./assets/img/profile-img.jpeg" alt="imagen de perfil">
+                <div>
+                    <h1>Nombre Alumno</h1>
+                    <div class="profile-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h2>Valencia | España</h2>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="row">
+                <div >
+                    <label for="nombre" class="form-label">Nombre y Apellidos</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre Alumno" name="nombre">
+                </div>
+                <div class="col-6">
+                    <label for="telefono" class="form-label ">Nº Teléfono</label>
+                    <input type="tel" class="form-control num" id="telefono" placeholder="+34 654 85 52 48" name="telefono">
+                </div>
+                <div class="col-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="hcliment@gmail.com" name="email">
+                </div>
+                <div class="col-6">
+                    <label for="pais" class="form-label">País</label>
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg pais" name="pais">
+                        <option selected>España</option>
+                        <option value="1">Argentina</option>
+                        <option value="2">Francia</option>
+                        <option value="3">Alemania</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label for="ciudad" class="form-label">Ciudad</label>
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg ciudad" name="ciudad">
+                        <option selected>Barcelona</option>
+                        <option value="1">Madrid</option>
+                        <option value="2">Bilbao</option>
+                        <option value="3">Valencia</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label class="form-label">Traslado</label>
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg traslado" name="traslado">
+                        <option selected value="0">No</option>
+                        <option value="1">Si</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label class="form-label">Presencialidad</label>
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg presencialidad" name="presencialidad">
+                        <option selected value=0>En remoto</option>
+                        <option value="1" value=1>Presencial</option>
+                    </select>
+                </div>
+                <div class="col-12 mb-4">
+                    <label class="form-label">Documento CV</label>
+                    <div>
+                        <input type="file" id="cv" hidden/>
+                        <button for="cv" class="btn btn-secondary"><i class="bi bi-cloud-upload"></i>Subir de nuevo</label>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-trash"></i>Borrar</label> 
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="etiquetas" class="form-label">Etiquetas</label>
+                    <input type="text" class="form-control" placeholder="Escribe para buscar...."  name="etiquetas">
+                    <div class="tag-list">
+                        <span>HTML&CSS<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                                <path fill-rule="evenodd"
+                                    d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                            </svg></span>
+                        <span>React<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                                <path fill-rule="evenodd"
+                                    d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                            </svg></span>
+                        <span>Angular<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                                <path fill-rule="evenodd"
+                                    d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                            </svg></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,157 @@
+/* Variables */
+/** Estilos pagina index **/
+.candidate-dashboard {
+  display: flex; }
+
+.candidate-form {
+  flex-basis: 30%;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 20px; }
+  .candidate-form .profile {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 24px; }
+    .candidate-form .profile img {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      border: #e5e5e5 5px solid; }
+    .candidate-form .profile h1 {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 28px; }
+    .candidate-form .profile .profile-location {
+      display: flex;
+      flex-flow: row;
+      color: #A5A8B3; }
+      .candidate-form .profile .profile-location i {
+        vertical-align: baseline;
+        -webkit-text-stroke: 0px;
+        font-size: 15px; }
+      .candidate-form .profile .profile-location h2 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 12px;
+        margin-bottom: -3px;
+        margin-top: 1px; }
+  .candidate-form form {
+    margin-top: 48px; }
+    .candidate-form form .btn-secondary {
+      margin-right: 10px; }
+    .candidate-form form .btn-outline-secondary i {
+      font-size: 16px; }
+
+/* Form */
+.form-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em; }
+
+.form-control {
+  border-radius: 6px;
+  font-size: inherit;
+  line-height: 12px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  background-color: #F8F8F9;
+  border-color: #F8F8F9;
+  color: #121625;
+  font-weight: 500; }
+  .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #32D4A4;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 253, 141, 0.25); }
+  .form-control::placeholder {
+    color: #121625;
+    font-weight: 500; }
+
+.search {
+  position: relative; }
+  .search i {
+    position: absolute;
+    top: 10px;
+    left: 16px; }
+  .search .form-control {
+    width: 354px;
+    margin-bottom: 0;
+    padding: 9px 15px 8px 44px;
+    border-radius: 6px;
+    font-size: inherit;
+    background-color: #E6E6EA;
+    border-color: #E6E6EA;
+    color: #121625;
+    font-weight: 500; }
+    .search .form-control:focus {
+      color: #212529;
+      font-weight: 500;
+      background-color: #fff;
+      border-color: #32D4A4;
+      outline: 0;
+      box-shadow: none; }
+    .search .form-control::placeholder {
+      color: #121625;
+      font-weight: 500; }
+
+.form-select {
+  padding: 9px 15px 8px 15px;
+  margin-bottom: 28px !important;
+  border-radius: 6px;
+  font-size: inherit;
+  background-color: #F8F8F9;
+  border-color: #F8F8F9;
+  color: #121625;
+  font-weight: 500; }
+  .form-select:focus {
+    color: #212529;
+    font-weight: 500;
+    background-color: #fff;
+    border-color: #32D4A4;
+    outline: 0;
+    box-shadow: none; }
+  .form-select::placeholder {
+    color: #121625;
+    font-weight: 500; }
+  .form-select option {
+    max-width: 100%;
+    font-weight: 500; }
+
+.form-check {
+  padding-left: 30px; }
+  .form-check .form-check-input[type="checkbox"] {
+    margin-top: 1px;
+    margin-right: 13px;
+    border-radius: 0.15rem;
+    border: 3px solid #A5A8B3; }
+  .form-check .form-check-input:checked {
+    background-color: #32D4A4; }
+  .form-check .form-check-input:checked {
+    background-color: #32D4A4; }
+  .form-check .form-check-input:focus {
+    border-color: #32D4A4;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 253, 141, 0.25); }
+
+/*Tag list*/
+.tag-list span {
+  display: inline-block;
+  background-color: #E6E6EA;
+  color: #121625;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px 4px;
+  margin-right: 6px;
+  margin-bottom: 7px;
+  border-radius: 20px; }
+  .tag-list span svg {
+    width: 12px;
+    margin-left: 8px;
+    vertical-align: text-bottom;
+    color: #A5A8B3; }

@@ -1,0 +1,18 @@
+{
+  "name": "tonisalvadorubio_firstcommit_ejercicio1_fcfrontend",
+  "version": "1.0.0",
+  "description": "Ejercicio 1 First Commit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "node-sass -w assets/styles/scss/ -o assets/styles/css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "node-sass": "^7.0.0",
+    "sass": "^1.45.1"
+  }
+}
