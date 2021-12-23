@@ -4,12 +4,14 @@
         noMatchesText: 'No se han encontrado coincidencias...',
         initialTokens: [],
         initialSuggestions: [
-            {value: 'apple', text: 'Apple', description: 'Fruit'},
-            {value: 'banana', text: 'Banana', description: 'Fruit'},
-            {value: 'donut', text: 'Donut', description: 'Sweet'},
-            {value: 'pizza', text: 'Pizza', description: 'Cheesy'},
-            {value: 'burger', text: 'Burger', description: 'Meaty'},
-            {value: 'pancake', text: 'Pancake', description: 'Sweet'}
+            {value: 'react', text: 'React'},
+            {value: 'html&css', text: 'Htmal&Css'},
+            {value: 'angular', text: 'Angular'},
+            {value: 'java', text: 'Java'},
+            {value: 'javascript', text: 'JavaScript'},
+            {value: 'csharp', text: 'C#'},
+            {value: 'php', text: 'Php'},
+            {value: 'flutter', text: 'Flutter'}
         ],
         suggestionRenderer: function (suggestion) {
             var option = document.createElement('li');

@@ -207,6 +207,7 @@ var TokenAutocomplete = /** @class */ (function () {
             this.parent.hiddenSelect.add(option);
             var token = document.createElement('span');
             token.classList.add('token-autocomplete-token');
+            token.classList.add('token-item');
             token.setAttribute('data-text', tokenText);
             option.setAttribute('data-value', tokenValue);
             token.textContent = tokenText;
@@ -303,26 +304,7 @@ var TokenAutocomplete = /** @class */ (function () {
             class_2.prototype.clearSuggestions = function () {
                 this.suggestions.innerHTML = '';
             };
-            /**
-             * Loads suggestions matching the given query from the rest service behind the URI given as an option while initializing the field.
-             *
-             * @param query the query to search suggestions for
-             */
-            class_2.prototype.requestSuggestions = function (query) {
-                var me = this;
-                var request = new XMLHttpRequest();
-                request.onload = function () {
-                    if (Array.isArray(request.response)) {
-                        request.response.forEach(function (suggestion) {
-                            me.addSuggestion(suggestion);
-                        });
-                    }
-                };
-                request.open('GET', me.options.suggestionsUri + '?query=' + query, true);
-                request.responseType = 'json';
-                request.setRequestHeader('Content-type', 'application/json');
-                request.send();
-            };
+
             /**
              * Adds a suggestion with the given text matching the users input to the dropdown.
              *
