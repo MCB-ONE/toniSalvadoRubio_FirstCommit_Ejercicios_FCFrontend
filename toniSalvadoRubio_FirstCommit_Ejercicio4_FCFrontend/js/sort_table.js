@@ -10,7 +10,6 @@ function sortTable(n) {
         shouldSwitch = false;
         x = rows[i].querySelectorAll("td")[n];
         y = rows[i + 1].querySelectorAll("td")[n];
-        console.log(x)
         if (dir == "asc") {
             if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
               shouldSwitch= true;
