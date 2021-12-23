@@ -141,29 +141,6 @@
     box-shadow: 0 0 0 0.25rem rgba(13, 253, 141, 0.25); }
 
 /*Tag list*/
-/* .tags {
-    .form-label{
-        display: block;
-    }
-    span {
-        display: inline-block;
-        background-color: $cm-gray--200;
-        color: $cm-black;
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: 600;
-        padding: 5px 12px 4px;
-        margin-right: 6px;
-        margin-bottom: 7px;
-        border-radius: 20px;
-        svg {
-            width: 12px;
-            margin-left: 8px;
-            vertical-align: text-bottom;
-            color: $cm-gray--300;
-        }
-    }
-} */
 /* Token autocomplete */
 .token-autocomplete-container {
   width: 100%;
