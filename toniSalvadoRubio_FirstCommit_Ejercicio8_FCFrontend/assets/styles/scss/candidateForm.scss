@@ -1,0 +1,257 @@
+@import "./variables";
+
+/** Estilos pagina **/
+.candidate-dashboard {
+    display: flex;
+    gap: 40px;
+    /** Formulario **/
+    .candidate-form {
+        flex-basis: 30%;
+        background-color: $cm-white;
+        padding: 24px;
+        border-radius: 20px;
+        .profile {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            gap: 24px;
+            img {
+                width: 90px;
+                height: 90px;
+                border-radius: 20px;
+                border: #e5e5e5 5px solid;
+            }
+            h1 {
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            .profile-location {
+                display: flex;
+                flex-flow: row;
+                color: $cm-gray--300;
+                i {
+                    vertical-align: baseline;
+                    -webkit-text-stroke: 0px;
+                    font-size: 15px;
+                }
+                h2 {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-left: 12px;
+                    margin-bottom: -3px;
+                    margin-top: 1px;
+                }
+            }
+        }
+        form {
+            margin-top: 48px;
+            .btn-secondary {
+                margin-right: 10px;
+            }
+            .btn-outline-secondary {
+                i {
+                    font-size: 16px;
+                }
+            }
+            .tags {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    /** Curriclum **/
+    .curriculum{
+        flex-basis: 70%;
+        .pdf-reader{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+    }
+}
+
+/* Form */
+.form-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+}
+
+.form-control {
+    border-radius: $cm-border--radius;
+    font-size: inherit;
+    line-height: 12px;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    background-color: $cm-gray--100;
+    border-color: $cm-gray--100;
+    color: $cm-black;
+    font-weight: 500;
+    &:focus {
+        color: #212529;
+        background-color: #fff;
+        border-color: $cm-primary;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(13, 253, 141, 0.25);
+    }
+    &::placeholder {
+        color: $cm-black;
+        font-weight: 500;
+    }
+}
+
+.search {
+    position: relative;
+    i {
+        position: absolute;
+        top: 10px;
+        left: 16px;
+    }
+    .form-control {
+        width: 354px;
+        margin-bottom: 0;
+        padding: 9px 15px 8px 44px;
+        border-radius: $cm-border--radius;
+        font-size: inherit;
+        background-color: $cm-gray--200;
+        border-color: $cm-gray--200;
+        color: $cm-black;
+        font-weight: 500;
+        &:focus {
+            color: #212529;
+            font-weight: 500;
+            background-color: #fff;
+            border-color: $cm-primary;
+            outline: 0;
+            box-shadow: none;
+        }
+        &::placeholder {
+            color: $cm-black;
+            font-weight: 500;
+        }
+    }
+}
+
+.form-select {
+    padding: 9px 15px 8px 15px;
+    margin-bottom: 28px !important;
+    border-radius: $cm-border--radius;
+    font-size: inherit;
+    background-color: $cm-gray--100;
+    border-color: $cm-gray--100;
+    color: $cm-black;
+    font-weight: 500;
+    &:focus {
+        color: #212529;
+        font-weight: 500;
+        background-color: #fff;
+        border-color: $cm-primary;
+        outline: 0;
+        box-shadow: none;
+    }
+    &::placeholder {
+        color: $cm-black;
+        font-weight: 500;
+    }
+    option {
+        max-width: 100%;
+        font-weight: 500;
+    }
+}
+
+.file-upload{
+    position: relative;
+    height: 100%;
+    #cv-upload{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+    p{
+        margin-bottom: 0;
+        
+    }
+}
+
+/*Tag list*/
+/* Token autocomplete */
+.token-autocomplete-container {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    .token-item {
+        order: 2;
+        background-color: $cm-gray--200;
+        color: $cm-black;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 3px 12px 4px;
+        margin-right: 6px;
+        margin-bottom: 7px;
+        border-radius: 20px;
+        .token-autocomplete-token-delete {
+            cursor: pointer;
+            color: #a5a8b3;
+            font-size: 23px;
+            margin-left: 6px;
+            vertical-align: text-bottom;
+            pointer-events: auto;
+            font-weight: 100;
+        }
+    }
+    .token-autocomplete-input {
+        text-transform: initial;
+        display: block;
+        order: 1;
+        width: 100%;
+        border-radius: $cm-border--radius;
+        font-size: inherit;
+        line-height: 12px;
+        padding: 14px 0px 14px 15px;
+        margin-bottom: 15px;
+        background-color: $cm-gray--100;
+        border-color: $cm-gray--100;
+        color: $cm-black;
+        font-weight: 500;
+        &:empty {
+            &::before {
+                content: attr(data-placeholder);
+                color: rgba(0, 0, 0, 0.281);
+            }
+        }
+        &:focus-visible {
+            outline-color: $cm-primary;
+        }
+    }
+    .token-autocomplete-suggestions {
+        display: none;
+        width: 100%;
+        list-style-type: none;
+        padding: 0px;
+        order: 1;
+        margin-top: -25 px;
+        margin-bottom: 12px;
+        li {
+            width: 100%;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .token-autocomplete-suggestion-active {
+            color: #747474;
+            background-color: #fdfdfd;
+        }
+        .token-autocomplete-suggestion-highlighted {
+            background-color: $cm-primary;
+        }
+    }
+}
