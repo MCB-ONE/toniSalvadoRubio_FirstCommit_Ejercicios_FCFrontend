@@ -13,7 +13,7 @@
   display: flex;
   flex-flow: column;
   overflow-y: scroll;
-  flex-basis: 40%;
+  flex-basis: 32%;
 }
 .home .wrapper::-webkit-scrollbar {
   display: none;

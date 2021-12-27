@@ -25,13 +25,21 @@
   display: flex;
   flex-flow: column;
   overflow-y: scroll;
-  flex-basis: 40%;
+  flex-basis: 32%;
+  /* Medium devices (portatil, 1300) */
   /* Medium devices (landscape tablets, 768px and up) */
   /* Medium devices (landscape tablets, 768px and up) */
   /* Extra small devices (phones, 600px and down) */
 }
 .home .wrapper::-webkit-scrollbar {
   display: none;
+}
+@media only screen and (max-width: 1300px) {
+  .home .wrapper {
+    flex-basis: 40%;
+    display: flex;
+    flex-flow: column;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .home .wrapper {
